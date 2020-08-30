@@ -1,0 +1,30 @@
+<div align="center">
+  <h3><u>Welcome to E-COMMERCE {{title}}</u></h3>
+</div>
+
+<div>
+  <ul>
+    <li>
+      <a routerLink="/getshoes">Shoes</a>
+    </li>
+    <li>
+      <a routerLink="/createshoe">Create Shoe</a>
+    </li>
+    <li>
+      <a routerLink="/findshoebyid">Find Shoe by ID</a>
+    </li>
+    <li>
+      <a routerLink="/removeshoe">Remove Shoe</a>
+    </li>
+    <li>
+      <a routerLink="/findshoebycategory">Find Shoe by Category</a>
+    </li>
+    <li>
+        <a routerLink="/cart"> <button (click)="addToCart(sportyshoes)"> My Cart </button></a>
+    </li>
+  </ul>
+</div>
+
+<div align="center">
+  <router-outlet></router-outlet>
+</div>

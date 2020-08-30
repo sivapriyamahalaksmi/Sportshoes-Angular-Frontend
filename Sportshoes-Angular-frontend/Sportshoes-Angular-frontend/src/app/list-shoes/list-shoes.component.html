@@ -1,0 +1,25 @@
+<div align="center">
+    <h4 style="text-decoration: underline;">List of all Shoes</h4>
+    <table border="1px">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Image</th>
+        </tr>
+        <tr *ngFor="let sportyshoes of sportyshoe">
+            <td>{{sportyshoes.id}}</td>
+            <td>{{sportyshoes.name}}</td>
+            <td>{{sportyshoes.date}}</td>
+            <td>{{sportyshoes.category}}</td>
+            <td>{{sportyshoes.color}}</td>
+            <td>{{sportyshoes.price | currency}}</td>
+            <td><img width="100" height="100" [src]="sportyshoes.image"></td>
+            <td> <button (click)="addToCart(sportyshoes)"> Buy </button> </td>
+        </tr>
+    </table>
+        
+    </div>

@@ -1,0 +1,35 @@
+<div>
+    <h3>Shoe By id Search</h3>
+    <table border="1px">
+        <tr>
+            <td><input type="number" [(ngModel)]="id" placeholder="Enter Shoe id"></td>
+        </tr>
+    </table>
+    <br />
+    <button (click)="findshoebyid()">Search</button>
+
+    <div ng-if="class">
+        <table border="1px">
+
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>{{sportyshoe.id}}</td>
+                <td>{{sportyshoe.name}}</td>
+                <td>{{sportyshoe.date}}</td>
+                <td>{{sportyshoe.category}}</td>
+                <td>{{sportyshoe.color}}</td>
+                <td>{{sportyshoe.price}}</td>
+                <td><img width="100" height="100" [src]="sportyshoe.image"></td>
+        </tr>
+
+        </table>
+    </div>
+</div>

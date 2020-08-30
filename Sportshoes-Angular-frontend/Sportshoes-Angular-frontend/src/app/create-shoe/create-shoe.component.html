@@ -1,0 +1,32 @@
+<div align="center">
+    <h4 style="text-decoration: underline;">Create Shoe</h4>
+    <table border="1px">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" [(ngModel)]="sportyshoe.name"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date" [(ngModel)]="sportyshoe.date"></td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td><input type="text" [(ngModel)]="sportyshoe.category"></td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td><input type="text" [(ngModel)]="sportyshoe.color"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="number" [(ngModel)]="sportyshoe.price"></td>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td><input type="text" [(ngModel)]="sportyshoe.image"></td>
+        </tr>
+
+    </table>
+
+        <button (click)="createshoe()"> Create Shoe</button>
+</div>
